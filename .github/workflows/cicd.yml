@@ -28,6 +28,6 @@ jobs:
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.EC2_PRIVATE_KEY }}
           script: |
-            sudo chmod +x /home/${{ secrets.EC2_USERNAME }}/firewall.sh
+            sudo chmod +x /home/${{ secrets.EC2_USERNAME }}
             sudo /home/${{ secrets.EC2_USERNAME }}/firewall.sh
             sudo systemctl restart nginx
